@@ -12,13 +12,36 @@
 <body>
 
 	<div class="container">
-		<div class="main-header">dksjfklsdjflkfdlk</div>
-		<div class="input-1">dfnklsanlnflk</div>
-		<div class="input-2">dkfnkelwewnjnfe</div>
-		<div class="input-3">kwjfekwjewkjed</div>
-		<div class="input-4">ekwjejeklwklewd</div>
-		<div class="result">welkjlwekjdjd</div>
-		<div class="play-again">ewkjljejjdekw</div>
+		<div class="main-header"><h1>CRAZY PHRASE GENERATOR</h1></div>
+		<form>
+			<div class="input-1">
+				<span>Write the name of an animal:</span>
+				<input class="animal" type="text">
+			</div>
+
+			<div class="input-2">
+				<span>Write an adjetive:</span>
+				<input class="adj" type="text">
+			</div>
+
+			<div class="input-3">
+				<span>Write a verb:</span>
+				<input class="verb" type="text">
+			</div>
+
+			<div class="input-4">
+				<span>Write a adverb:</span>
+				<input class="adv" type="text">
+				<input type="button" value="Make Mad Lib" id="submitButton">
+			</div>
+		</form>
+
+		<div class="result">
+			<h2 id="madLibsHeader">Your Story</h2>
+			<p id="madLibsOutput"></p>
+		</div>
+
+		<div class="play-again"><a href="#">PLAY AGAIN?!</a></div>
 	</div>
 
 	<script type="text/javascript" src="assets/script.js"></script>
