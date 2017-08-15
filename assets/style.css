@@ -1,13 +1,13 @@
 body, html {
 	width: 100%;
 	height: 100%;
-	background: grey;
+	background: #f4f4f4;
 }
 
 .container {
 	display: grid;
 	grid-template-columns: 75%;
-	grid-template-rows: repeat (7, 10%);
+	grid-template-rows: repeat (8, 10%);
 	grid-row-gap: 10px;
 	align-items: center;
 	align-content: center;	
@@ -18,15 +18,15 @@ body, html {
 		"input2"
 		"input3"
 		"input4"
+		"btn"
 		"result"
-		"play-again";
+		"play-again";		;
 	margin-top: 10%;
 	margin-bottom: auto;
-
 }
 .main-header {
 	grid-area: main-header;
-	background: grey;
+	background: #373737;
 	padding: 1em;
 	box-shadow: 2px 6px 20px silver;
 	text-align: center;
@@ -34,32 +34,59 @@ body, html {
 }
 .input-1 {
 	grid-area: input1;
-	background: pink;
+	background: #dcd0c0;
 	padding: 1em;
 	text-align: center;
 }
 .input-2 {
-	background: blue;
+	grid-area: input2;
+	background: #c0b283;
 	padding: 1em;
 	text-align: center;
 }
 .input-3 {
-	background: green;
+	grid-area: input3;
+	background: #dcd0c0;
 	padding: 1em;
 	text-align: center;
 }
 .input-4 {
-	background: red;
+	grid-area: input4;
+	background: #c0b283;
+	padding: 1em;
+	text-align: center;
+}
+.btn {
+	grid-area: btn;
+	background: #dcd0c0;
 	padding: 1em;
 	text-align: center;
 }
 .result {
-	background: orange;
+	grid-area: result;
+	background: #c0b283;
 	padding: 1em;
 	text-align: center;
 }
 .play-again {
-	background: pink;
+	grid-area: play-again;
+	background: #373737;
 	padding: 1em;
 	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	border: 2px dashed black;
+	border-radius: 10px;
+}
+a:hover {
+    box-shadow: 0 12px 16px 0 rgba(255,255,240,0.3),0 17px 50px 0 rgba(255,255,240,0.19);
+}
+#submitButton {
+
+}
+#submitButton::hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3),0 17px 50px 0 rgba(0,0,0,0.19);
 }
