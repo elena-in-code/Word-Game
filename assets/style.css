@@ -1,3 +1,47 @@
-
-
-	
+.container {
+	display: grid;
+	grid-template-columns: 75%;
+	grid-template-rows: repeat (7, 10%);
+	grid-row-gap: 10px;
+	align-items: center;
+	align-content: center;	
+	justify-content: center;
+	grid-template-areas: 
+		"main-header"
+		"input1"
+		"input2"
+		"input3"
+		"input4"
+		"result"
+		"play-again";
+}
+.main-header {
+	grid-area: main-header;
+	background: grey;
+	padding: 1em;
+}
+.input-1 {
+	grid-area: input1;
+	background: pink;
+	padding: 1em;
+}
+.input-2 {
+	background: blue;
+	padding: 1em;
+}
+.input-3 {
+	background: green;
+	padding: 1em;
+}
+.input-4 {
+	background: red;
+	padding: 1em;
+}
+.result {
+	background: orange;
+	padding: 1em;
+}
+.play-again {
+	background: pink;
+	padding: 1em;
+}
