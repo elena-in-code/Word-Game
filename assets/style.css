@@ -30,7 +30,12 @@ body, html {
 	padding: 1em;
 	box-shadow: 2px 6px 20px silver;
 	text-align: center;
-
+	color: white;
+	font-size: 15px
+}
+form {
+	box-shadow: 2px 6px 20px silver;
+	margin-bottom: 0;
 }
 .input-1 {
 	grid-area: input1;
@@ -67,12 +72,15 @@ body, html {
 	background: #c0b283;
 	padding: 1em;
 	text-align: center;
+	box-shadow: 2px 6px 20px silver;
 }
 .play-again {
 	grid-area: play-again;
 	background: #373737;
 	padding: 1em;
 	text-align: center;
+	box-shadow: 2px 6px 20px silver;
+	margin-bottom: 2%;
 }
 a {
 	text-decoration: none;
