@@ -19,7 +19,7 @@ body, html {
 		"input3"
 		"input4"
 		"btn"
-		"result"
+		"story"
 		"play-again";		;
 	margin-top: 3%;
 	margin-bottom: auto;
@@ -62,8 +62,8 @@ body, html {
 	padding: 1em;
 	text-align: center;
 }
-.result {
-	grid-area: result;
+#story {
+	grid-area: story;
 	background: #c0b283;
 	padding: 1em;
 	text-align: center;
