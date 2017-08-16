@@ -20,12 +20,15 @@ window.onload = function(){
 //Reset feature::WIP::
 var resetButton = document.querySelector(".play-again");
 
-function reset (){
-	//needs to clear the previous generated story
-	//needs to empty/clear all the input boxes
-	//make the page ready like it was refreshed
-}
 //Reset button
 resetButton.addEventListener("click", function(){
-	reset();
+	clearFields();
 })
+
+function clearFields() {
+    document.getElementById("Output").value = ""; //this one it is not working
+    document.getElementById("animal").value = "";
+	document.getElementById("verb").value = "";
+	document.getElementById("adj").value = "";
+	document.getElementById("adv").value = "";
+}
