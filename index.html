@@ -7,44 +7,43 @@
     <meta name="description" content="Mad-Lib, random phrase generator, JavaScript, CSS, Grid.">
     <meta name="author" content="Elena Moral">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
 
 	<div class="container">
-		<div class="main-header"><h1>Animal Mad Lib</h1></div>
+		<h1 class="main-header">Animal Mad Lib</h1>
 
-		<form method="post">
+		<form id="values">
 
-		<div class="input-1">
-			<label>Write the name of an animal:
-			<input id="animal" type="text" placeholder="Goose" required></label>
-		</div>
+			<div class="input" id="input-1">
+				<label>Write the name of an animal:</label> <br>
+				<input id="animal" type="text" placeholder="Goose" required>
+			</div>
 
-		<div class="input-2">
-			<label>Write an adjetive:
-			<input id="adj" type="text" placeholder="fast" required></label>
-		</div>
+			<div class="input" id="input-2">
+				<label>Write an adjective:</label><br>
+				<input id="adj" type="text" placeholder="fast" required>
+			</div>
 
-		<div class="input-3">
-			<label>Write a verb:
-			<input id="verb" type="text" placeholder="dance" required></label>
-		</div>
+			<div class="input" id="input-3">
+				<label>Write a verb:</label><br>
+				<input id="verb" type="text" placeholder="dance" required>
+			</div>
 
-		<div class="input-4">
-			 <label>Write a adverb:
-			<input id="adv" type="text" placeholder="madly" required></label>
-		</div>
+			<div class="input" id="input-4">
+				<label>Write a adverb:</label><br>
+				<input id="adv" type="text" placeholder="madly" required>
+			</div>
 
-		<div class="btn">
-			<button value="Done" id="submitButton">Submit</button>
-		</div>
+			<div class="btn">
+				<button value="submit" id="submitButton">Submit</button>
+			</div>
 
 		</form>
 
-		<div id="story">
-			<h3 id="madLibsHeader">This is your Mad Lib! </h3>
-			<p id="output"></p>
+		<div id="output" class="hide">
 		</div>
 
 		<div class="play-again"><a href="#">PLAY AGAIN?!</a></div>
