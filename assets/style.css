@@ -48,6 +48,7 @@ input {
 	padding: 8px; 
 	color: lightgray; 
 	border-radius: 5px;
+	width: 100%;
 }
 
 input:focus {

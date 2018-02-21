@@ -15,7 +15,12 @@ function buttonFunc(e) {
 	an animal can ever wish for. And we all love popcorn 🍿!!
 	`;
 	document.getElementById("output").innerHTML = output;
-	outputContainer.classList.remove("hide");
+	if(animalValue !== "" && verbValue !== "" && adjValue !== "" && advValue !== ""){
+		outputContainer.classList.remove("hide");
+	} else {
+		alert("Sorry, we need words in each input to generate a Mad Story for you")
+	}
+	
 	e.preventDefault();
 	
 }
